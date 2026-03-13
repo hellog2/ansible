@@ -1,0 +1,40 @@
+{
+    "image" : "105621340",
+    "service" : "nolticket",
+    "network" : {
+        "vpc" : "95974",
+        "subnet" : ["247834", "247837"]
+
+    },
+    "nas" : "28870557",
+    "server_name_cfg" : {
+        "pattern" : "^([^-]+)-(.+)([0-9]+)$",
+        "format" : "{service}-{type}{index}"
+    },
+    "server_list" : {
+        "home": {
+            "cpu" : 2,
+            "memory" : 4,
+            "count" : 2,
+            "hypervisor" : "KVM",
+            "cpu_type" : "amd",
+            "os" : "Rocky Linux 8.10"
+        },
+        "adm": {
+            "cpu" : 2,
+            "memory" : 4,
+            "count" : 1,
+            "hypervisor" : "KVM",
+            "cpu_type" : "amd",
+            "os" : "Rocky Linux 8.10"
+        },
+        "api": {
+            "cpu" : 4,
+            "memory" : 8,
+            "count" : 1,
+            "hypervisor" : "KVM",
+            "cpu_type" : "amd",
+            "os" : "Rocky Linux 8.10"
+        }
+    }
+}
